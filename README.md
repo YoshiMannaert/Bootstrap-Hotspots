@@ -1,6 +1,9 @@
 # Bootstrap Hotspots
 Simple hotspots for Bootstrap
 
+![CSS Only 958b](https://img.badgesize.io/YoshiMannaert/Bootstrap-Hotspots/master/assets/bootstrap-hotspots.css?label=normal size)
+![Minified Only 665b](https://img.badgesize.io/YoshiMannaert/Bootstrap-Hotspots/master/assets/bootstrap-hotspots.min.css?label=normal size)
+
 ## Getting started
 To get started simply add Bootstrap 4 to your project and add the css or minified css file to your project.
 Or simple copy the css code and add it to your css.
