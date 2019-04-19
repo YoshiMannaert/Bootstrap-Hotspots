@@ -1,0 +1,19 @@
+body{
+    background-image: url('cool-background.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.btn-primary{
+    border-color: rgb(50, 50, 119) !important;
+    background-color: rgb(214, 242, 254) !important;
+    color: rgb(50, 50, 119) !important;
+    border-width: 2px;
+}
+.navbar-brand,
+.text-primary{
+    color: rgb(50, 50, 119) !important
+}
+
+.pre-scrollable{
+    max-height: calc(100vh - 400px);
+}

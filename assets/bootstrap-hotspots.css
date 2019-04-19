@@ -1,0 +1,75 @@
+.highlight-spot
+{
+    position: absolute;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: crimson;
+}
+.highlight-spot:hover
+{
+    cursor: pointer;
+}
+.highlight-spot:after
+{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    width: 30px;
+    height: 30px;
+
+    content: '';
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+
+    opacity: .0;
+    border: 3px solid crimson;
+    -webkit-border-radius: 30px;
+}
+
+.top
+{
+    top: 0;
+}
+.left
+{
+    left: 0;
+}
+.right
+{
+    right: 0;
+}
+.bottom
+{
+    bottom: 0;
+}
+.center-y{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.center-x{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes pulsate
+{
+    0%
+    {
+        -webkit-transform: scale(.1, .1); opacity: .0;
+    }
+    50%
+    {
+        opacity: .5;
+    }
+    100%
+    {
+        -webkit-transform: scale(1.2, 1.2); opacity: .0;
+    }
+}

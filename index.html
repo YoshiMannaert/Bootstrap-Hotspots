@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap Hotspots</title>
+    <!-- First add Bootstraps styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Then add the Bootstrap hotspot styling -->
+    <link rel="stylesheet" href="assets/bootstrap-hotspots.min.css">
+    <!-- Make sure to include Jquery and Bootstraps javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- This is extra stuff for these docs, no need to use them -->
+    <link rel="stylesheet" href="assets/docs/docs.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">Bootstrap Hotspots</a>
+        <div>
+            <a href="index.html" class="btn btn-link text-light">Home</a>
+            <a href="css.html" class="btn btn-link text-light mr-2">CSS <i class="fas fa-code"></i></a>
+            <a class="btn btn-outline-light my-2" href="#">Github</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mb-4 py-4 align-items-center">
+            <div class="col-12 text-center py-4 mb-4">
+                <h1>Bootstrap element hotspots</h1>
+            </div>
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <h2>Getting started</h2>
+                <p class="position-relative">
+                    To get started include Bootstraps styling as wel as the Bootstrap jquery libraries to your project.
+                    For more information on how to do this go to <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">Bootstraps documentation</a>.
+                    <br>
+                    After you've done that add the <code>bootstrap-hotspot.css</code> file to your page and you're ready to go!
+                    <span class="highlight-spot top left" data-toggle="popover" data-content="This is an example hotspot!"></span>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-2">
+                <span class="highlight-spot center-y center-x" data-toggle="popover" data-content="This is a hotspot added to an image"></span>
+                <img src="https://i.kinja-img.com/gawker-media/image/upload/s--u7Bp8hZt--/c_scale,f_auto,fl_progressive,q_80,w_800/drnzblgclnsjvrbp7r6e.png" alt="" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-4 py-4 align-items-center">
+            <div class="col-12 col-md-6 mb-2">
+                <img src="https://steamuserimages-a.akamaihd.net/ugc/929298444480968511/C2A1EE999511D0A7E35E88D3B592D18165631427/" alt="" class="img-fluid rounded shadow" style="width: 100%;">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Adding a hotspot is easy!<span class="highlight-spot top left" data-toggle="popover" data-content="This is a hotspot added to a title"></span></h2>
+                <p>
+                    Create an element like the title above and add the hotspot element <code>&#x3C;span class=&#x22;highlight-spot top left&#x22; data-toggle=&#x22;popover&#x22; data-content=&#x22;And here&#x27;s some amazing content. It&#x27;s very engaging. Right?&#x22;&#x3E;&#x3C;/span&#x3E;</code>.
+                    The hotspot uses Bootstraps builtin popovers. So there's no need for any extra javascript libraries.
+                    The hotspots styling uses position absolute so make sure the element you add it to is positioned relative.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-4 py-4 align-items-center">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <h2>Positioning the hotspot!</h2>
+                <p class="position-relative">
+                    As mentioned before the hotspots are positioned absolute. There are six classes included in the styling to position the element.
+                    The default positioning classes are: <code>top</code>, <code>bottom</code>, <code>left</code> and <code>right</code>. This will position the element at the top or bottom and left or right.
+                    You should add either top or bottom as well as either left or right.
+                    You can center the hotspot vertically by using the <code>center-y</code> class, or horizontally by using the <code>center-x</code> class.
+                    If you don't add classes the hotspot will default be at the top left of the element.
+                    Make sure the element you add it to is positioned relative by either adding <code>element{position:relative}</code> to the css of the element or by using bootstraps <code>.position-relative</code> class.
+                    <span class="highlight-spot top right" data-toggle="popover" data-content="This is an example hotspot that is positioned at the top right!"></span>
+                </p>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-2">
+                <img src="https://static.independent.co.uk/s3fs-public/thumbnails/image/2017/04/02/09/rick-and-morty.jpg" alt="" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-4 py-4 align-items-center">
+            <div class="col-12 col-md-6 mb-2">
+                <img src="http://zonadelta.net/sergiosrrubio/wp-content/uploads/2016/10/Anatomy_Park_7.png" alt="" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>Adding hotspots to elements without children!</h2>
+                <p>
+                    Certain HTML-elements do no allow you to add a child element to them. This means you can't add the hotspot element to elements like inputs and images.
+                    But you can still add a hotspot to those elements by adding a parent wrapper element. For example add a div with class <code>position-relative</code> and then add the element and the hotspot as seperate children.
+                </p>
+                <div class="position-relative d-inline-block">
+                    <input type="text" placeholder="input with a hotspot" class="form-control">
+                    <span class="highlight-spot center-y right" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. Right?"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row mb-4 py-4 align-items-center">
+            <div class="col-12 col-md-6 order-2 order-md-1">
+                <h2>Adding hotspots to buttons or links!</h2>
+                <p>
+                    Watch out.
+                    If you add the hotspot to a button or link, clicking it will cause the button or link to get clicked. For these situations you should also use a parent wrapper and add the highlight and the button or link as seperate children.
+                </p>
+                <div class="position-relative d-inline-block">
+                    <button type="button" class="btn btn-primary">This is a button</button>
+                    <span class="highlight-spot top right" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. Right?"></span>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 order-1 order-md-2 mb-2">
+                <img src="https://cdn.vox-cdn.com/thumbor/RB2RFl5DOR39taoQuIrq4iSh3QU=/0x0:1834x917/fit-in/1200x600/cdn.vox-cdn.com/uploads/chorus_asset/file/10439489/Screen_Shot_2018_03_16_at_12.35.08_PM.png" alt="" class="img-fluid rounded shadow">
+            </div>
+        </div>
+        <div class="row mb-4 py-4 align-items-center">
+            <div class="col-12 col-md-6 mb-2">
+                <img src="https://timedotcom.files.wordpress.com/2017/07/ram_s3_image6.png" alt="" class="img-fluid rounded shadow">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2>It's as simple as that!</h2>
+                <p>
+                    There's nothing more to it. You just add the hotspot element with Bootstraps default popovers.
+                    The text you want to show in the hotspot you add to the <code>data-content</code> attribute of the hotspot.
+                    You can also add <code>data-title</code> to add a title to the hotspot as well as use Bootstraps popover <code>data-placement</code> attribute to determine if the text should be shown above, below, to the left or the the right of the hotspot.
+                    <br>
+                    More info about Bootstraps popovers can be found <a href="https://getbootstrap.com/docs/4.3/components/popovers/">here</a>!
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4 bg-light text-center">Made with <i class="fas fa-heart text-danger"></i> by <a href="https://yoshimannaert.be">Mosh</a></footer>
+    <script type="text/javascript">
+        // Make sure to enable popovers
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>Bootstrap Hotspots</title>
+    <!-- First add Bootstraps styling -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Then add the Bootstrap hotspot styling -->
+    <link rel="stylesheet" href="assets/bootstrap-hotspots.min.css">
+    <!-- Make sure to include Jquery and Bootstraps javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <!-- This is extra stuff for these docs, no need to use them -->
+    <link rel="stylesheet" href="assets/docs/docs.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-none justify-content-between align-items-center">
+        <a class="navbar-brand" href="index.html">Bootstrap Hotspots</a>
+        <div>
+            <a href="index.html" class="btn btn-link text-light">Home</a>
+            <a href="css.html" class="btn btn-link text-light mr-2">CSS <i class="fas fa-code"></i></a>
+            <a class="btn btn-outline-light my-2" href="#">Github</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row mb-4 py-4 justify-content-center">
+            <div class="col-12 col-md-6 py-4 mb-4 text-center">
+                <h1>CSS</h1>
+                <p>The extra css you need for these hotspots is really small <strong>( < 1kb )</strong>.</p>
+                <div>
+                    <span class="badge badge-primary"><strong>Normal:</strong> 958 bytes</span>
+                    <span class="badge badge-success"><strong>Minified:</strong> 665 bytes</span>
+                </div>
+            </div>
+            <div class="col-12 col-md-8">
+                <pre class="bg-light rounded p-4 pre-scrollable shadow"><code>.highlight-spot
+{
+    position: absolute;
+
+    display: block;
+
+    width: 10px;
+    height: 10px;
+
+    border-radius: 50%;
+    background-color: crimson;
+}
+.highlight-spot:hover
+{
+    cursor: pointer;
+}
+.highlight-spot:after
+{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+
+    width: 30px;
+    height: 30px;
+
+    content: &#x27;&#x27;;
+    -webkit-animation: pulsate 1s ease-out;
+    -webkit-animation-iteration-count: infinite;
+
+    opacity: .0;
+    border: 3px solid crimson;
+    -webkit-border-radius: 30px;
+}
+
+.top
+{
+    top: 0;
+}
+.left
+{
+    left: 0;
+}
+.right
+{
+    right: 0;
+}
+.bottom
+{
+    bottom: 0;
+}
+.center-y{
+    top: 50%;
+    transform: translateY(-50%);
+}
+.center-x{
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+@-webkit-keyframes pulsate
+{
+    0%
+    {
+        -webkit-transform: scale(.1, .1); opacity: .0;
+    }
+    50%
+    {
+        opacity: .5;
+    }
+    100%
+    {
+        -webkit-transform: scale(1.2, 1.2); opacity: .0;
+    }
+}
+</code></pre>
+            </div>
+        </div>
+    </div>
+    <footer class="py-4 bg-light text-center">Made with <i class="fas fa-heart text-danger"></i> by <a href="https://yoshimannaert.be">Mosh</a></footer>
+    <script type="text/javascript">
+        // Make sure to enable popovers
+        $(function () {
+          $('[data-toggle="popover"]').popover()
+        })
+    </script>
+</body>
+</html>
