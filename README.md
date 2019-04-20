@@ -36,4 +36,4 @@ But you can still add a hotspot to those elements by adding a parent wrapper ele
 
 ### Adding hotspots to buttons or links!
 Watch out. While buttons and links allow for children there is an issue.
-If you add the hotspot to a button or link, clicking it will cause the button or link to get clicked. For these situations you should also use a parent wrapper and add the highlight and the button or link as separate children.
+If you add the hotspot to a button or link, clicking it will cause the button or link to get clicked. For these situations you should also use a parent wrapper and add the hotspot and the button or link as separate children.
